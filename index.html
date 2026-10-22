@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101812">
+  <title>Temple Dash — Jungle Run</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <a class="brand" href="#" aria-label="Temple Dash home">
+        <span class="brand-mark">✦</span>
+        <span><b>TEMPLE</b><small>DASH / JUNGLE RUN</small></span>
+      </a>
+      <div class="header-tag"><span class="live-dot"></span> ENDLESS RUN MODE</div>
+    </header>
+
+    <section class="intro">
+      <div>
+        <p class="kicker">THE ANCIENT TRAIL AWAITS</p>
+        <h1>Run beyond<br><em>the ruins.</em></h1>
+      </div>
+      <p class="intro-copy">Three lanes. One runner. How far can you make it?</p>
+    </section>
+
+    <section class="game-card">
+      <div class="hud">
+        <div class="hud-item"><span>DISTANCE</span><strong id="score">000000</strong></div>
+        <div class="hud-item coin-hud"><span>COINS</span><strong><i class="coin-mini">●</i> <b id="coins">00</b></strong></div>
+        <div class="hud-item"><span>BEST RUN</span><strong id="best">000000</strong></div>
+      </div>
+      <div class="viewport">
+        <canvas id="game" width="1000" height="600" aria-label="Temple Dash game canvas"></canvas>
+        <div class="screen" id="screen">
+          <div class="screen-card">
+            <div class="emblem">✦</div>
+            <p class="kicker" id="screen-kicker">A LOST TEMPLE. A NEW CHALLENGE.</p>
+            <h2 id="screen-title">Ready to run?</h2>
+            <p id="screen-copy">Dodge ancient traps, leap over rocks and gather the lost gold.</p>
+            <button id="start">Start adventure <span>↗</span></button>
+            <div class="control-hint"><kbd>←</kbd><kbd>→</kbd> change lane <span>·</span> <kbd>↑</kbd> jump</div>
+          </div>
+        </div>
+        <div class="toast" id="toast">+20 COINS</div>
+      </div>
+      <div class="bottom-bar">
+        <span><i class="key-dot"></i> Arrow keys / WASD</span>
+        <span>BUILT FOR THE WEB <b>✦</b></span>
+      </div>
+    </section>
+    <footer><span>Temple Dash is an original mini endless-runner demo.</span><span>HTML · CSS · JAVASCRIPT</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
